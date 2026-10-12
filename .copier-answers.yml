@@ -3,7 +3,7 @@ _commit: v1.8.3
 _src_path: gh:stromy-org/claude-plugin-template
 author_name: William Masquelier
 client_name: Stromy
-client_slug: stromy
+client_slug: au-gov-data
 description: 'Australian government research inside your own AI tools: Hansard across
     every parliament, federal legislation, procurement, political finance and statistics,
     served by the AU Gov Data connector'

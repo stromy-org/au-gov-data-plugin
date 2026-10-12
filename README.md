@@ -13,7 +13,7 @@ Australian government research inside your own AI tools: Hansard across every pa
 Via marketplace:
 ```bash
 /plugin marketplace add stromy-org/au-gov-data-marketplace
-/plugin install au-gov-data
+/plugin install au-gov-data --marketplace stromy-org/au-gov-data-marketplace
 ```
 
 For local development:
@@ -25,10 +25,19 @@ uv sync
 claude --plugin-dir .
 ```
 
+## Connector
+
+The Australian data itself comes from the **AU Gov Data** connector, an authenticated MCP server
+(invitation-only, Microsoft sign-in). It is never declared in this plugin: add it once under
+**Settings → Connectors** as a custom connector with the URL
+`https://au-gov-data.braveforest-e73e8541.northeurope.azurecontainerapps.io/mcp`, then switch it on
+in the chat. The `au-setup` skill walks through it step by step.
+
 ## Skills
 
-Skills are split between MCP-hosted stubs (fetched at runtime via
-`ReadMcpResourceTool`) and locally-authored skills (frontmatter `_local: true`).
+Skills are split between MCP-hosted stubs (fetched at runtime from the AU Gov Data
+connector) and the locally-authored `au-setup` skill. This plugin carries no client brand
+overlay: it is a product plugin, not a client plugin.
 See `skills/README.md` for the maintenance workflow.
 
 ## Maintenance

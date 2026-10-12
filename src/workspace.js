@@ -14,7 +14,7 @@ function pluginRoot(...segments) {
 
 /** Read company data file as JSON */
 function readCompanyData(filename) {
-  const filePath = pluginRoot('companies', 'stromy', filename);
+  const filePath = pluginRoot('companies', 'au-gov-data', filename);
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
 

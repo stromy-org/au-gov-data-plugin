@@ -1,0 +1,12 @@
+{
+  "name": "au-gov-data",
+  "version": "0.1.0",
+  "description": "Australian government research inside your own AI tools: Hansard across every parliament, federal legislation, procurement, political finance and statistics, served by the AU Gov Data connector",
+  "author": {
+    "name": "stromy-org"
+  },
+  "repository": "https://github.com/stromy-org/au-gov-data-plugin",
+  "license": "UNLICENSED",
+  "keywords": [],
+  "mcpServers": "./mcp.json"
+}

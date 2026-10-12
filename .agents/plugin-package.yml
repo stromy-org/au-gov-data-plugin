@@ -20,13 +20,23 @@ identity:
   license: UNLICENSED
   keywords: []
 targets: ["openai", "codex", "claude", "cursor", "copilot", "vscode", "kiro", "gemini"]
-portable_capabilities: {}
+portable_capabilities:
+  australian-government-research:
+    summary: Australian government, parliament and legislation research through the AU Gov Data connector
+    skills:
+    - au-gov-data
+    - au-guide
+    - au-setup
+    mcp_servers: []
 skills:
-  include: []
+  include:
+  - au-gov-data
+  - au-guide
+  - au-setup
 marketplace:
   name: au-gov-data-marketplace
   repository: https://github.com/stromy-org/au-gov-data-marketplace
-  description: "Plugin marketplace for Stromy plugins"
+  description: "Marketplace for the AU Gov Data plugin by Stromy"
   entry_description: "Australian government research inside your own AI tools: Hansard across every parliament, federal legislation, procurement, political finance and statistics, served by the AU Gov Data connector"
   owner:
     name: stromy-org
