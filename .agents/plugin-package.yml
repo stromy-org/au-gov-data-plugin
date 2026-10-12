@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/stromy-org/stromy-org/main/scripts/plugin-package.schema.json
+# CANONICAL plugin package (ORG-PLAN-165) — the ONLY authored source of this
+# plugin's identity, version, targets, skills and marketplace listing. Every
+# provider manifest (plugin.json, mcp.json, .claude-plugin/, .codex-plugin/,
+# gemini-extension.json) and the paired marketplace entry are generated from it:
+# edit here, then run from stromy-org
+#   ./scripts/sync.sh plugin-packages --write --plugin <this repo>
+# Seeded ONCE by the template and never rendered again; .copier-answers.yml is
+# template provenance, never release state. Skills are registered here
+# automatically by the stub and local-skill syncs as they are mirrored in.
+schema_version: 1
+identity:
+  name: au-gov-data
+  display_name: "AU Gov Data by Stromy"
+  version: 0.1.0
+  description: "Australian government research inside your own AI tools: Hansard across every parliament, federal legislation, procurement, political finance and statistics, served by the AU Gov Data connector"
+  author:
+    name: stromy-org
+  repository: https://github.com/stromy-org/au-gov-data-plugin
+  license: UNLICENSED
+  keywords: []
+targets: ["openai", "codex", "claude", "cursor", "copilot", "vscode", "kiro", "gemini"]
+portable_capabilities: {}
+skills:
+  include: []
+marketplace:
+  name: au-gov-data-marketplace
+  repository: https://github.com/stromy-org/au-gov-data-marketplace
+  description: "Plugin marketplace for Stromy plugins"
+  entry_description: "Australian government research inside your own AI tools: Hansard across every parliament, federal legislation, procurement, political finance and statistics, served by the AU Gov Data connector"
+  owner:
+    name: stromy-org
