@@ -1,5 +1,5 @@
 {
   "name": "au-gov-data",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Australian government research inside your own AI tools: Hansard across every parliament, federal legislation, procurement, political finance and statistics, served by the AU Gov Data connector"
 }

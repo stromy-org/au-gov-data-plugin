@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "au-gov-data",
   "displayName": "AU Gov Data by Stromy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Australian government research inside your own AI tools: Hansard across every parliament, federal legislation, procurement, political finance and statistics, served by the AU Gov Data connector",
   "author": {
     "name": "stromy-org"

@@ -2,7 +2,7 @@
 name: au-gov-data
 description: "Orchestrate Australian government-relations research: federal legislation (FRL), statistics (ABS, OECD), procurement and grants (AusTender, GrantConnect), budget (PBS), political finance and election results (AEC), company/charity registers (ASIC, ACNC), lobbying registers (federal, QLD, NSW), members' interests, ATO tax transparency, NGER emissions, committee activity, consultations, cross-jurisdiction Hansard, e-petitions and RSS monitoring. Use for topic monitoring, actor and entity briefs, influence maps, money trails, legislation lookups, quantitative grounding, bill tracking, consultation scans and early-warning monitoring."
 metadata:
-  stromy-client-summary: "Research any Australian government topic across eight parliaments' Hansard, federal law, spending and statistics — every finding cited to a checkable identifier."
+  stromy-client-summary: "Research any Australian government topic across nine parliaments' Hansard, federal law, spending and statistics — every finding cited to a checkable identifier."
 ---
 <!--
   GENERATED FILE — DO NOT EDIT.
@@ -17,6 +17,16 @@ metadata:
 # au-gov-data (MCP-hosted skill)
 
 This skill's full instructions are hosted on the `au-gov-data` MCP server. Do not hardcode workflow logic locally — always fetch the live version from the MCP.
+
+## Before you start — this skill needs the `au-gov-data` connector
+
+This skill's instructions live on the `au-gov-data` MCP, which reaches you as an **authorized connector** rather than as part of the plugin. Before step 1 below, check whether this conversation actually has the `au-gov-data` MCP's tools (`fs_read` / `fs_list`) available to call.
+
+**If those tools are not present at all, STOP — and do not retry.** A missing tool is not a slow server: it means the connector is either not added to this workspace or not switched on for this conversation. Retrying cannot fix it. Tell the user plainly what to do, naming the connector:
+
+> This needs the **Au Gov Data** connector, which isn't switched on for this chat. Open your connector settings, check it's connected and enabled for this conversation, then ask me again.
+
+Then stop and wait. Never fall back to a local or identically-named base skill, and never answer from your own knowledge instead — an unsourced answer is **wrong output, not a fallback**.
 
 ## Loading instructions
 
