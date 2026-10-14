@@ -1,0 +1,22 @@
+# Changes here will be overwritten by Copier; DO NOT edit manually.
+_commit: v1.8.3
+_src_path: gh:stromy-org/claude-plugin-template
+author_name: William Masquelier
+client_name: Stromy
+client_slug: au-gov-data
+description: 'Australian government research inside your own AI tools: Hansard across
+    every parliament, federal legislation, procurement, political finance and statistics,
+    served by the AU Gov Data connector'
+display_name: AU Gov Data by Stromy
+enable_stromy_format: false
+github_org: stromy-org
+include_mcp: false
+include_node: true
+include_python: true
+marketplace_slug: au-gov-data-marketplace
+mcp_servers: []
+plugin_name: AU Gov Data
+plugin_slug: au-gov-data
+provider_targets: openai,codex,claude,cursor,copilot,vscode,kiro,gemini
+repo_slug: au-gov-data-plugin
+version: 0.1.0
