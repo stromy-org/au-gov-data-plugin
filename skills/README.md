@@ -1,12 +1,5 @@
 # Skills in this plugin
 
-<!-- Deliberately NOT `AU Gov Data`: a plugin repo is public, and
-     `audit-deployed-skill-disclosure.py` treats a deployed body naming a real
-     client as an engagement disclosure. valumonicsrd was hand-corrected on
-     2026-08-22 (386ccfc) but the template was not, so every plugin scaffolded
-     since re-introduced the name. Fixed at the source 2026-09-05
-     (ORG-PLAN-252). -->
-
 This directory holds the plugin's skills. Two kinds of skills live here:
 
 1. **MCP-hosted stubs** — ~25-line SKILL.md files that fetch their canonical
