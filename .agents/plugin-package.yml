@@ -12,7 +12,7 @@ schema_version: 1
 identity:
   name: au-gov-data
   display_name: "AU Gov Data by Stromy"
-  version: 0.1.1
+  version: 0.1.2
   description: "Australian government research inside your own AI tools: Hansard across every parliament, federal legislation, procurement, political finance and statistics, served by the AU Gov Data connector"
   author:
     name: stromy-org
